@@ -45,3 +45,5 @@ def search(request):
 </html>
 ```
 这其中{{rlt}}记号，是为表格处理结果预留位置。
+## Request对象
+
