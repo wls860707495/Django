@@ -1,0 +1,10 @@
+# python常用函数
+## mean函数
+mean()：取平均值   
+```
+设数据x=np.array([1,2,3],[2,3,4],[3,4,5],[4,5,6])
+num1 = np.mat(x)                    //其中np指的是numpy，而mat更类似于matlab中，更适用于矩阵的计算。
+np.mean(num1)          //对所有元素取平均值
+np.mean(now2,0)    //压缩行，对各列求平均值
+np.mean(now2,1)    //压缩列，对各行求平均值
+```
