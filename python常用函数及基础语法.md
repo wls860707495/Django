@@ -97,9 +97,41 @@ eg:tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
  print tinydicr['name']
  结果为 john
 ```
+## 需要注意的运算符
+```
+**  返回x的y次幂
+//  返回商的整数部分(向下取整)
+<>  判断两个对象是否不相等
+and   x and y   如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值 
+or    x or y   如果 x 是非 0，它返回 x 的值，否则它返回 y 的计算值
+not   not x   如果 x 为 True，返回 False 。如果 x 为 False，它返回 True
 
+```
+## 循环
+while: 用于循环执行程序，即在某条件下，循环执行某段程序，以处理需要重复处理的相同任务。  
+for  :  for循环可以遍历任何序列的项目，如一个列表或者一个字符串
+```
+eg1：
+for letter in 'Python':     # 第一个实例
+   print '当前字母 :', letter
 
+结果：
+      当前字母 : P
+      当前字母 : y
+      当前字母 : t
+      当前字母 : h
+      当前字母 : o
+      当前字母 : n
+eg2:
+fruits = ['banana', 'apple',  'mango']
+for index in range(len(fruits)):
+   print '当前水果 :', fruits[index]
+   
+结果:
+      当前水果 : banana
+      当前水果 : apple
+      当前水果 : mango
 
-
+```
 
 
