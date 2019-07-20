@@ -105,7 +105,7 @@ eg:tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
 and   x and y   如果 x 为 False，x and y 返回 False，否则它返回 y 的计算值 
 or    x or y   如果 x 是非 0，它返回 x 的值，否则它返回 y 的计算值
 not   not x   如果 x 为 True，返回 False 。如果 x 为 False，它返回 True
-
+\  转义运算符
 ```
 ## 循环
 while: 用于循环执行程序，即在某条件下，循环执行某段程序，以处理需要重复处理的相同任务。  
