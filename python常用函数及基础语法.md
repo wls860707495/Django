@@ -28,4 +28,23 @@ np.mean(now2,1)    //压缩列，对各行求平均值
 eg:
 
 ```
+## python列表
+初始化:list = []
+常用的列表截取与字符串等一致，即还是list[x:x];   
+常用函数：--->此处源码均需看，后加   
+```
+list.append(obj):在列表末尾添加新的对象
+list.count(obj):统计某个元素在列表中出现的次数
+list.extend(seq):在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表）
+list.index(obj):从列表中找出某一个值第一个匹配项的索引值
+list.insert(index ,obj):将对象插入列表
+list.pop([index=-1]):移除列表中的一个元素（默认最后一个元素），并返回该元素的值
+list.remove(obj):移除列表中某个值的第一个匹配项
+list.reverse():逆置列表中的元素
+list.sort(cmp=None,key=None,reverse=False):对原列表进行排序
+```
+
+
+
+
 
