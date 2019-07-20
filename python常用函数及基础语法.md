@@ -44,6 +44,49 @@ list.reverse():逆置列表中的元素
 list.sort(cmp=None,key=None,reverse=False):对原列表进行排序
 ```
 python中的self相当于this指针  
+## super()函数
+主要是解决多继承问题以及，一旦涉及到多继承，那么就会涉及到调用顺序的问题以及重复调用的问题，使用super()函数可以很好的避免这些问题。下面为菱形调用例子：    
+```
+class A():
+    def __init__(self):
+        print('enter A')
+        print('leave A')
+
+
+class B(A):
+    def __init__(self):
+        print('enter B')
+        super().__init__()
+        print('leave B')
+
+
+class C(A):
+    def __init__(self):
+        print('enter C')
+        super().__init__()
+        print('leave C')
+
+
+class D(B, C):
+    def __init__(self):
+        print('enter D')
+        super().__init__()
+        print('leave D')
+
+
+d = D()
+
+
+运行实例：
+enter D
+enter B
+enter C
+enter A
+leave A
+leave C
+leave B
+leave D
+```
 
 
 
