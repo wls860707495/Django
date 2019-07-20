@@ -43,6 +43,7 @@ list.remove(obj):移除列表中某个值的第一个匹配项
 list.reverse():逆置列表中的元素
 list.sort(cmp=None,key=None,reverse=False):对原列表进行排序
 ```
+python中的self相当于this指针  
 
 
 
