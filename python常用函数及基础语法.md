@@ -134,5 +134,23 @@ for index in range(len(fruits)):
       当前水果 : mango
 
 ```
+## python中可变与不可变对象
+```
+eg1:
+    def ChangeInt(a):
+       a = 10
+       return  a
+    b = 2
+    ChangeInt(b)
+    print(b)  # 结果是 2
+eg2:
+    def ChangeInt(a):
+       a = 10
+       return  a
+    b = 2
+    a = ChangeInt(b)
+    print(a)  # 结果是 10  
+```
+即python中a、b这些符号仅是有着类似于指针的作用，指向‘=’右侧创建的对象。
 
 
