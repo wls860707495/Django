@@ -186,7 +186,13 @@ eg2:
          o
          b
 ```
-
+对于python中的函数,若其属性值里有self，那么调用其自身函数时需要前面加self.来调用，如：
+```
+eg:
+   def x(self,n):
+      if n>0:
+         self.x(n-1)
+```
 
    
 
