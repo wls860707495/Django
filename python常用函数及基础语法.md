@@ -216,4 +216,36 @@ eg:
     www.runoob.com!
     Very good site!
 ```
+## 常用File方法
+```
+file.close():关闭文件。关闭后文件不能再进行读写操作。
+file.flush():刷新文件内部缓冲，直接把内部缓冲区的数据立刻写入文件, 而不是被动的等待输出缓冲区写入。
+file.next():返回文件下一行。
+file.read([size]):从文件读取指定的字节数，如果未给定或为负则读取所有。
+file.readline([size]):读取整行，包括 "\n" 字符
+file.tell:返回文件当前位置。
+file.write(str):将字符串写入文件，返回的是写入的字符长度。
+file.writelines(sequence):向文件写入一个序列字符串列表，如果需要换行则要自己加入每行的换行符。
+```
+##  异常
+```
+eg1:-->文件读取
+      try:
+          fh = open("testfile", "w")
+          fh.write("这是一个测试文件，用于测试异常!!")
+      except IOError:
+          print "Error: 没有找到文件或读取文件失败"
+      else:
+          print "内容写入文件成功"
+          fh.close()
+eg2:-->try-finally
+       try:
+       <语句>
+       finally:
+       <语句>    #退出try时总会执行
+       raise
+```
+
+
+
 
