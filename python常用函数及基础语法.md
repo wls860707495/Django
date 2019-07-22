@@ -158,6 +158,34 @@ eg2:
 
     可变类型：类似 c++ 的引用传递，如 列表，字典。如 fun（la），则是将 la 真正的传过去，修改后fun外部的la也会受影响
 ```
+## python中range()函数
+python range() 函数可创建一个整数列表，一般用在 for 循环中。 
+range(start, stop[, step])此处为range()函数的用法。 
+```
+    start: 计数从 start 开始。默认是从 0 开始。例如range（5）等价于range（0， 5）;  
+    stop: 计数到 stop 结束，但不包括 stop。例如：range（0， 5） 是[0, 1, 2, 3, 4]没有5  
+    step：步长，默认为1。例如：range（0， 5） 等价于 range(0, 5, 1)  
+```
+下面为实例
+```
+eg1:
+    range(0, 10, 3)  # 步长为 3
+   结果：
+        [0, 3, 6, 9]
+        
+eg2:
+    x = 'runoob'
+    for i in range(len(x)) :
+       print(x[i])
+
+    结果：
+         r
+         u
+         n
+         o
+         o
+         b
+```
 
 
    
