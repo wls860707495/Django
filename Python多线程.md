@@ -195,7 +195,7 @@ for t in threads:
 print("Exiting Main Thread")
 
 ```
-
-
+## 注
+python中的多线程因为GIL锁实际每次只能有一个核在执行python代码，不能像java那样执行多线程。
 
 
