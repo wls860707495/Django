@@ -97,6 +97,13 @@ eg:tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
  print tinydicr['name']
  结果为 john
 ```
+python中字典的扩展可以直接定义  
+```
+eg:
+dict = {"ss":"12","ee":"22"}
+dict[w] = "123"
+```
+如上述，即可直接将key-value加入到dict当中
 ## 需要注意的运算符
 ```
 **  返回x的y次幂
